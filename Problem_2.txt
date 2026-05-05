@@ -13,7 +13,7 @@ public class Problem2 {
 
         long k = sc.nextLong();
 
-        // Check feasibility
+        
         long mod = arr[0] % k;
         for (int i = 1; i < n; i++) {
             if (arr[i] % k != mod) {
@@ -22,7 +22,7 @@ public class Problem2 {
             }
         }
 
-        // Normalize values
+    
         long[] normalized = new long[n];
         for (int i = 0; i < n; i++) {
             normalized[i] = arr[i] / k;
